@@ -7,7 +7,7 @@ import io
 import nltk
 nltk.download('punkt')
 
-st.set_page_config(page_title='InNews🇮🇳: A Summarised News📰 Portal',page_icon=":newspaper:",layout="wide")
+st.set_page_config(page_title='News++',page_icon=":newspaper:",layout="wide")
 
 
 
