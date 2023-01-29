@@ -94,7 +94,7 @@ def run():
     category = ['--Select--', 'Trending 📈 News', 'Favourite 🤎 Topics', 'Search 🕵🏼 Topic']
     cat_op = st.sidebar.selectbox('Select your Category', category)
     if cat_op == category[0]:
-        st.warning('Please select Type!!')
+        st.sidebar.warning('Please select Type!!')
     elif cat_op == category[1]:
         st.subheader("✅ Here is the Trending🔥 news for you")
         no_of_news = st.sidebar.slider('Number of News:', min_value=5, max_value=25, step=1)
@@ -106,7 +106,7 @@ def run():
         st.subheader("Choose your favourite Topic")
         chosen_topic = st.sidebar.selectbox("Choose your favourite Topic", av_topics)
         if chosen_topic == av_topics[0]:
-            st.warning("Please Choose the Topic")
+            st.sidebar.warning("Please Choose the Topic")
         else:
             no_of_news = st.sidebar.slider('Number of News:', min_value=5, max_value=25, step=1)
             news_list = fetch_category_news(chosen_topic)
